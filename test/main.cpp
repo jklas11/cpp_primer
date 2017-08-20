@@ -1,9 +1,29 @@
 #include <iostream>
+using namespace::std;
+double multiply(double,double);
 
-using namespace std;
-//kommentar
-int main(int argc, char *argv[])
-{
-    cout << "Hello World!" << endl;
+
+int main() {
+
+    double firstnumber{0};
+    double secondnumber{0};
+
+    cout << "this programm multiplies 2 numbers\n";
+
+    cout << "enter first number" << endl;
+    cin >> firstnumber;
+
+    cout << "enter second number" << endl;
+    cin >> secondnumber;
+
+    cout << "result: " << multiply(firstnumber,secondnumber) << endl;
+
     return 0;
+}
+
+double multiply(double a, double b) {
+
+    double result = a*b;
+
+    return result;
 }
